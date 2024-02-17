@@ -9,15 +9,151 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Custom font import  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+
+        .anton-regular {
+            font-family: "Anton", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+
+
+        .poppins-light {
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        .poppins-regular {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .poppins-medium {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .poppins-semibold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .poppins-bold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .poppins-extrabold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        .poppins-black {
+            font-family: "Poppins", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+
+
+    </style>
 </head>
-<body>
+<body >
 
-    <div>
-        <div >
+    <main class="bg-[#010313] bg-[url(images/background.png)] bg-no-repeat bg-center min-h-screen">
+        <section class="home hidden">
+            <div class="min-h-screen text-white flex flex-col justify-center items-center space-y-7">
+                <h1 class="text-9xl anton-regular uppercase">Alpha Clash Pro</h1>
+                <p class=" text-2xl poppins-medium">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+                <button class="btn btn-active">Play Now</button>
+            </div>
+        </section>
+    
+    
+        <section class="play-ground hidden">
+            <div class="flex flex-col justify-center items-center border min-h-screen">
+
+                <div class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3] relative">
+                    <div class="flex justify-center "><p class="bg-[#2F2941] absolute px-6 pb-4 text-white rounded-b-xl ">Don't watch keyboard  while playing...</p></div>
+                    <div class="flex justify-center items-center h-full"><p class="text-9xl text-black font-bold">Y</p></div>
+                </div>
             
-        </div>
-    </div>
 
+                <div class="mt-20">
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">q</kbd>
+                        <kbd class="kbd">w</kbd>
+                        <kbd class="kbd">e</kbd>
+                        <kbd class="kbd">r</kbd>
+                        <kbd class="kbd">t</kbd>
+                        <kbd class="kbd">y</kbd>
+                        <kbd class="kbd">u</kbd>
+                        <kbd class="kbd">i</kbd>
+                        <kbd class="kbd">o</kbd>
+                        <kbd class="kbd">p</kbd>
+                      </div> 
+                      <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">a</kbd>
+                        <kbd class="kbd">s</kbd>
+                        <kbd class="kbd">d</kbd>
+                        <kbd class="kbd">f</kbd>
+                        <kbd class="kbd">g</kbd>
+                        <kbd class="kbd">h</kbd>
+                        <kbd class="kbd">j</kbd>
+                        <kbd class="kbd">k</kbd>
+                        <kbd class="kbd">l</kbd>
+                      </div> 
+                      <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">z</kbd>
+                        <kbd class="kbd">x</kbd>
+                        <kbd class="kbd">c</kbd>
+                        <kbd class="kbd">v</kbd>
+                        <kbd class="kbd">b</kbd>
+                        <kbd class="kbd">n</kbd>
+                        <kbd class="kbd">m</kbd>
+                        <kbd class="kbd">/</kbd>
+                      </div>
+                </div>
+
+
+                <div class="flex flex-row justify-between w-[1000px] mt-20 ">
+                    <button class="btn btn-active bg-fuchsia-800 text-white border-none text-2xl">Life <img src="./images/heart.png" alt="">1</button>
+                    <button class="btn btn-active bg-fuchsia-950 text-white border-none text-2xl">Score <img src="./images/dolor.png" alt="">1</button>
+                </div>
+
+            </div>
+
+            
+
+
+            
+    
+        </section>
+    
+    
+        <section class="Score hidden">
+            <div class="flex flex-col justify-center items-center min-h-screen">
+                <div class="text-white flex flex-col justify-center items-center bg-gradient-to-l from-violet-800 from-65% to-purple-300 p-4 rounded-2xl space-y-4">
+                    <h1 class="text-6xl poppins-semibold">Score : <span>0</span></h1>
+                    <button class="btn btn-active text-2xl text-black poppins-semibold">Play Again</button>
+                    <p class="text-xl">Practice will make you Pro</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
 
 
     <script src="alpha-clash-pro.js"></script>
